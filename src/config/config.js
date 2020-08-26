@@ -1,0 +1,1 @@
+global.SALT = 'ertgu-12676-oiuyt';
