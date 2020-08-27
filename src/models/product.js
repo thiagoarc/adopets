@@ -195,7 +195,7 @@ const Product = function(product) {
     }else{
       offset = (params.page - 1) * recordByPage;
     }
-    mysqlConnection.query("SELECT * FROM product WHERE category LIKE CONCAT('%',?,'%') LIMIT ? OFFSET ?",[params.description, recordByPage, offset] ,(err, res) => {
+    mysqlConnection.query("SELECT * FROM product WHERE category LIKE CONCAT('%',?,'%') LIMIT ? OFFSET ?",[params.category, recordByPage, offset] ,(err, res) => {
       if (err) {
         console.log("error: ", err);
         logger.error(err.message);
