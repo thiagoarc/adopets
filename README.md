@@ -27,19 +27,19 @@ http://SERVIDOR/products/name/:name -> lista os produtos baseados no parametro :
     http://SERVIDOR/products/name/camisa -> serão retornados todos os produtos que tem "camisa" no nome.
 
 http://SERVIDOR/products/name/:name/:page -> lista os produtos baseados no parametro :name com paginação, semelhante ao anterior com o acrescimo da paginação, o parametro :page é a pagina de resgitros a ser mostrada, por padrão serão mostrados 5 registros por página. Necessita de uma requisição do tipo GET. Exemplo: 
-    http://SERVIDOR/products/name/camisa/2 -> serão mostrados os registros, que contem "camisa" no nome, de 11 até 20.
+    http://SERVIDOR/products/name/camisa/2 -> serão mostrados os registros, que contem "camisa" no nome, de 6 até 10.
 
 http://SERVIDOR/products/description/:description -> lista os produtos baseados no parametro :description, necessita de uma requisição do tipo GET. O parametro description é a descrição do produto a ser pesquisado conforme o exemplo abaixo:
     http://SERVIDOR/products/description/infantil -> serão retornados todos os produtos que tem "infantil" na descrição.
 
 http://SERVIDOR/products/description/:description/:page -> lista os produtos baseados no parametro :description com paginação, semelhante ao anterior com o acrescimo da paginação, o parametro :page é a pagina de resgitros a ser mostrada, por padrão serão mostrados 5 registros por página. Necessita de uma requisição do tipo GET. Exemplo: 
-    http://SERVIDOR/products/description/infantil/2 -> serão mostrados os registros, que contem "infantil" no nome, de 11 até 20.
+    http://SERVIDOR/products/description/infantil/2 -> serão mostrados os registros, que contem "infantil" no nome, de 6 até 10.
 
 http://SERVIDOR/products/category/:category -> lista os produtos baseados no parametro :category, necessita de uma requisição do tipo GET. O parametro category é a categoria do produto a ser pesquisado conforme o exemplo abaixo:
     http://SERVIDOR/products/category/acessorios -> serão retornados todos os produtos da categoria "acessorios".
 
 http://SERVIDOR/products/category/:category/:page -> lista os produtos baseados no parametro :category com paginação, semelhante ao anterior com o acrescimo da paginação, o parametro :page é a pagina de resgitros a ser mostrada, por padrão serão mostrados 5 registros por página. Necessita de uma requisição do tipo GET. Exemplo: 
-    http://SERVIDOR/products/category/acessorios/2 -> serão mostrados os registros, da categoria "acessorios", de 11 até 20.
+    http://SERVIDOR/products/category/acessorios/2 -> serão mostrados os registros, da categoria "acessorios", de 6 até 10.
 
 http://SERVIDOR/products/ -> realiza o cadastro de um novo produto, sendo necessaria uma requisição do tipo POST juntamente com o JSON com os dados do novo produto no formato: 
     {
