@@ -2,6 +2,8 @@ const app = require('../src/app');
 const debug = require('debug')('adopets:server');
 const http = require('http');
 
+require('dotenv').config();
+
 //const  log = require('../src/logs/helper-log');
 
 const port = normalizePort(process.env.PORT || '3000');
