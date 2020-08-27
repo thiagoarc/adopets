@@ -22,7 +22,9 @@ router.get('/:page', controller.getPagination);
 router.get('/name/:name', controller.getByName);
 router.get('/name/:name/:page', controller.getByNamePagination);
 router.get('/description/:description', controller.getByDescription);
+router.get('/description/:description/:page', controller.getByDescriptionPagination);
 router.get('/category/:category', controller.getByCategory);
+router.get('/category/:category/:page', controller.getByCategoryPagination);
 
 router.post('/', controller.post); 
 

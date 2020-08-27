@@ -56,6 +56,17 @@ exports.getByDescription = (req, res, next) => {
       });
 };
 
+exports.getByDescriptionPagination = (req, res, next) => {
+  Product.findByDescriptionPagination(req.params, (err, data) => {
+      if (err)
+        res.status(500).send({
+          message:
+            err.message || "Some error occurred while retrieving products."
+        });
+      else res.send(data);
+    });
+};
+
 exports.getByCategory = (req, res, next) => {
     Product.findByCategory(req.params.category, (err, data) => {
         if (err)
@@ -65,6 +76,17 @@ exports.getByCategory = (req, res, next) => {
           });
         else res.send(data);
       });
+};
+
+exports.getByCategoryPagination = (req, res, next) => {
+  Product.findByCategoryPagination(req.params, (err, data) => {
+      if (err)
+        res.status(500).send({
+          message:
+            err.message || "Some error occurred while retrieving products."
+        });
+      else res.send(data);
+    });
 };
 
 exports.post = (req, res, next) => {
