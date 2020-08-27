@@ -1,6 +1,6 @@
 'use strict';
 const User = require("../models/user");
-
+const md5 = require("md5");
 
 exports.post = (req, res, next) => {
 	// Validate request
