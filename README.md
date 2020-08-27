@@ -21,7 +21,7 @@ http://SERVIDOR/user/ -> realiza o cadastro de um novo usuario, sendo necessaria
 http://SERVIDOR/products/ -> lista todos os produtos cadastrados no banco de dados, necessita de uma requisição do tipo GET.
 
 http://SERVIDOR/products/:page -> lista os produtos com paginação, o parametro :page é a pagina de resgitros a ser mostrada, por padrão serão mostrados 5 registros por página. Necessita de uma requisição do tipo GET. Exemplo: 
-    http://SERVIDOR/products/2 -> serão mostrados os registros de 11 até 20.
+    http://SERVIDOR/products/2 -> serão mostrados os registros de 6 até 10.
 
 http://SERVIDOR/products/name/:name -> lista os produtos baseados no parametro :name, necessita de uma requisição do tipo GET. O parametro name é o nome do produto a ser pesquisado conforme o exemplo abaixo:
     http://SERVIDOR/products/name/camisa -> serão retornados todos os produtos que tem "camisa" no nome.
